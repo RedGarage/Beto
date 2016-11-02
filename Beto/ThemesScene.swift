@@ -147,6 +147,9 @@ class ThemesScene: SKScene {
             NotificationCenter.default.addObserver(self, selector: #selector(self.updateStarCoinsLabelAfterBuy), name: NSNotification.Name(rawValue: "updateStarCoinsLabelAfterBuy"), object: nil)
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(self.loadShop), name: NSNotification.Name(rawValue: "fromRemoveAdsButton"), object: nil)
+        
+        
         layer.addChild(header)
         layer.addChild(container)
         layer.addChild(previousButton)
@@ -160,6 +163,13 @@ class ThemesScene: SKScene {
     
     func updateStarCoinsLabelAfterBuy() {
         starCoinsLabel.text = GameData.starCoins.formatStringFromNumberShortenMillion()
+    }
+    
+    func loadShop() {
+        let shop = BetoShop(type: .StarCoins)
+        self.addChild(shop.createLayer())
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateStarCoinsLabelAfterBuy), name: NSNotification.Name(rawValue: "updateStarCoinsLabelAfterBuy"), object: nil)
     }
     
     func previousPage() {

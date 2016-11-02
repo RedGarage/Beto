@@ -73,8 +73,6 @@ class MenuScene: SKScene {
         
         addChild(background)
         addChild(layer)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(MenuScene.reloadScene), name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification), object: nil)
     }
     
     func presentBoardScene() {
@@ -118,22 +116,9 @@ class MenuScene: SKScene {
     }
     
     func removeAds() {
-        Products.store.requestProducts { (success, products) in
-            if success {
-                for product in products! {
-                    Products.store.buyProduct(product)
-                }
-            }
-        }
+        presentThemesScene()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "fromRemoveAdsButton"), object: self)
     }
-    
-    func reloadScene() {
-        let transition = SKTransition.flipVertical(withDuration: 0.0)
-        let menuScene = MenuScene(size: self.size)
-        menuScene.scaleMode = .aspectFill
-        
-        view!.presentScene(menuScene, transition: transition)
-    }
-    
+
 }
 

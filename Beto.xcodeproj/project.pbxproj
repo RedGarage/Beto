@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00543AFB1C92ACCC006C3B52 /* DiceMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00543AFA1C92ACCC006C3B52 /* DiceMaker.swift */; };
+		3C8EE31B1DC958C7000DAF50 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */; };
 		3CC9988E1D997DCD0024C283 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9988D1D997DCD0024C283 /* IAPHelper.swift */; };
 		3CC998901D997F8D0024C283 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9988F1D997F8D0024C283 /* Products.swift */; };
 		B9066C851DB028D300957001 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9066C841DB028D300957001 /* GoogleMobileAds.framework */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		00543AFA1C92ACCC006C3B52 /* DiceMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceMaker.swift; sourceTree = "<group>"; };
+		3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		3CC9988D1D997DCD0024C283 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		3CC9988F1D997F8D0024C283 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		B9066C841DB028D300957001 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9066C851DB028D300957001 /* GoogleMobileAds.framework in Frameworks */,
+				3C8EE31B1DC958C7000DAF50 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +174,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C8EE3191DC958C7000DAF50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B92354C11D683B86006F653E /* ButtonNodes */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +202,7 @@
 				B94F77621C63FB7F00B3A78C /* BetoTests */,
 				B94F776D1C63FB7F00B3A78C /* BetoUITests */,
 				B94F77481C63FB7F00B3A78C /* Products */,
+				3C8EE3191DC958C7000DAF50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -388,6 +400,11 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = FC9822E58L;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					B94F775E1C63FB7F00B3A78C = {
 						CreatedOnToolsVersion = 7.2;
@@ -653,6 +670,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Beto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
@@ -674,6 +692,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Beto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.Beto;
