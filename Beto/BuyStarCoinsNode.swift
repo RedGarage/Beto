@@ -173,18 +173,19 @@ class BuyStarCoinsNode: SKNode {
         let confirmButton = ButtonNode(defaultButtonImage: "confirmButton")
         confirmButton.position = CGPoint(x: -50, y: -80)
         confirmButton.action = {
-            GameData.addStarCoins(self.package.starCoins)
-    
-            for diceKey in self.package.bonusDice {
-                GameData.addRewardsDiceCount(diceKey.rawValue, num: 1)
+            Products.store.requestProducts { (success, products) in
+                if success {
+                    for product in products! {
+                        if product.productIdentifier == "com.redgarage.Beto." + "\(self.package.name)" {
+                            Products.store.buyProduct(product)
+                        }
+                    }
+                }
+                confirmPurchaseNode.close()
             }
-    
-            GameData.save()
-            
-            NotificationCenter.default.post(name: Notification.Name(rawValue: "updateStarCoinsLabelAfterBuy"), object: self)
-    
-            confirmPurchaseNode.close()
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.purchaseConfirmed), name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification), object: nil)
         
         let cancelButton = ButtonNode(defaultButtonImage: "cancelButton")
         cancelButton.position = CGPoint(x: 50, y: -80)
@@ -201,4 +202,32 @@ class BuyStarCoinsNode: SKNode {
         
         self.parent?.addChild(confirmPurchaseNode.createLayer())
     }
+    
+    func purchaseConfirmed() {
+        if Products.store.isProductPurchased(Products.RemoveAds) {
+            
+        } else {
+            Products.store.requestProducts { (success, products) in
+                if success {
+                    for product in products! {
+                        if product.productIdentifier == "com.redgarage.Beto." + "RemoveAds" {
+                            Products.store.buyProduct(product)
+                        }
+                    }
+                }
+            }
+        }
+        
+        GameData.addStarCoins(self.package.starCoins)
+
+        for diceKey in self.package.bonusDice {
+            GameData.addRewardsDiceCount(diceKey.rawValue, num: 1)
+        }
+
+        GameData.save()
+        GameData.iCloud()
+
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "updateStarCoinsLabelAfterBuy"), object: self)
+    }
+    
 }

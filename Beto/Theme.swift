@@ -42,5 +42,6 @@ class Theme {
         GameData.subtractStarCoins(tier.rawValue)
         GameData.addPurchasedTheme(name)
         GameData.save()
+        GameData.iCloud()
     }
 }

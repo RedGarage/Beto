@@ -111,6 +111,13 @@ class GameDataManager {
         dict.write(toFile: path, atomically: true)
     }
     
+    func iCloud() {
+        let keyStore = NSUbiquitousKeyValueStore.default()
+        keyStore.set(GameData.starCoins, forKey: "starCoins")
+        keyStore.set(GameData.unlockedThemes, forKey: "unlockedThemes")
+        keyStore.synchronize()
+    }
+    
     func changeTheme(_ theme: Theme) {
         currentThemeName = theme.name
     }
@@ -133,6 +140,10 @@ class GameDataManager {
     
     func setDenomination(_ value: Int) {
         betDenomination = value
+    }
+    
+    func setStarCoins(_ amount: Int) {
+        starCoins += amount
     }
     
     func addStarCoins(_ amount: Int) {

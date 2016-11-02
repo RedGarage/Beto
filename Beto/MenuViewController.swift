@@ -65,7 +65,10 @@ class MenuViewController: UIViewController, GADInterstitialDelegate {
             interstitialAd = reloadInterstitialAd()
         }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.removeAds), name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification), object: nil)
+        updateStarCoins()
+        updateUnlockedThemes()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.removeAds), name: NSNotification.Name(rawValue: Products.RemoveAds), object: nil)
     }
     
     func reloadInterstitialAd() -> GADInterstitial {
@@ -83,6 +86,24 @@ class MenuViewController: UIViewController, GADInterstitialDelegate {
         self.interstitialAd = reloadInterstitialAd()
     }
     
+    func updateStarCoins() {
+        if let starCoins = NSUbiquitousKeyValueStore.default().object(forKey: "starCoins") as? Int {
+            GameData.setStarCoins(starCoins)
+        } else {
+            print("iCloud error")
+        }
+    }
+    
+    func updateUnlockedThemes() {
+        if let unlockedThemes = NSUbiquitousKeyValueStore.default().object(forKey: "unlockedThemes") as? NSArray {
+            for theme in unlockedThemes {
+                GameData.addPurchasedTheme(theme as! String)
+            }
+        } else {
+            print("iCloud error")
+        }
+    }
+    
     func showInterstitialAD() {
         if interstitialAd.isReady {
             self.interstitialAd.present(fromRootViewController: self)
@@ -91,6 +112,27 @@ class MenuViewController: UIViewController, GADInterstitialDelegate {
     
     func removeAds() {
         bannerView.removeFromSuperview()
+    }
+    
+    func iCloudChangedNotification(notification: NSNotification) {
+        print("iCloud changed")
+        if let userInfo = notification.userInfo {
+            if let changeReason = userInfo[NSUbiquitousKeyValueStoreChangeReasonKey] as? NSNumber {
+                print("Change reason = \(changeReason)")
+            }
+            if let changedKeys = userInfo[NSUbiquitousKeyValueStoreChangedKeysKey] as? [String] {
+                print("ChangedKeys = \(changedKeys)")
+            }
+        }
+        
+        let keyStore = NSUbiquitousKeyValueStore.default()
+        
+        if let starCoins = keyStore.object(forKey: "starCoins") as? Int {
+            GameData.addCoins(starCoins)
+        } else {
+            print("iCloud error")
+        }
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
