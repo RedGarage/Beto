@@ -15,6 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+<<<<<<< HEAD
+<<<<<<< HEAD
+        if IAPHelper.canMakePayments() {
+            Products.store.restorePurchases()
+        }
+=======
+        Products.store.restorePurchases()
+>>>>>>> faed6f0... Previous purchases restored
+=======
+        if IAPHelper.canMakePayments() {
+            Products.store.restorePurchases()
+        }
+>>>>>>> e549d9a... Star coins and themes save to iCloud
+        
         return true
     }
 
@@ -30,6 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        let keyStore = NSUbiquitousKeyValueStore.default()
+        keyStore.synchronize()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
