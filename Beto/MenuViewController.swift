@@ -65,7 +65,7 @@ class MenuViewController: UIViewController, GADInterstitialDelegate {
             interstitialAd = reloadInterstitialAd()
         }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.removeAds), name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.removeAds), name: NSNotification.Name(rawValue: Products.RemoveAds), object: nil)
     }
     
     func reloadInterstitialAd() -> GADInterstitial {

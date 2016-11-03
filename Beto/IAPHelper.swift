@@ -167,7 +167,7 @@ extension IAPHelper: SKPaymentTransactionObserver {
         UserDefaults.standard.synchronize()
         
         if identifier == Products.RemoveAds {
-            
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: identifier), object: identifier)
         } else {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification), object: identifier)
         }

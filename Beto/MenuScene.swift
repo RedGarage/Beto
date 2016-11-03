@@ -73,6 +73,16 @@ class MenuScene: SKScene {
         
         addChild(background)
         addChild(layer)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.refreshMenuScene), name: NSNotification.Name(rawValue: Products.RemoveAds), object: nil)
+    }
+    
+    func refreshMenuScene() {
+        let transition = SKTransition.flipVertical(withDuration: 0.0)
+        let menuScene = MenuScene(size: self.size)
+        menuScene.scaleMode = .aspectFill
+        
+        view!.presentScene(menuScene, transition: transition)
     }
     
     func presentBoardScene() {
