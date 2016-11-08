@@ -225,6 +225,7 @@ class BuyStarCoinsNode: SKNode {
         }
 
         GameData.save()
+        GameData.iCloud()
 
         NotificationCenter.default.post(name: Notification.Name(rawValue: "updateStarCoinsLabelAfterBuy"), object: self)
     }
