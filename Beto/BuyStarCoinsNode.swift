@@ -227,12 +227,16 @@ class BuyStarCoinsNode: SKNode {
         GameData.save()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         GameData.iCloud()
 =======
 >>>>>>> 40b9ac8... Added 4 packages to IAP
 =======
         GameData.iCloud()
 >>>>>>> e549d9a... Star coins and themes save to iCloud
+=======
+        GameData.iCloud()
+>>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
 
         NotificationCenter.default.post(name: Notification.Name(rawValue: "updateStarCoinsLabelAfterBuy"), object: self)
     }

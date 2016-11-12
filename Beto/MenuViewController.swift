@@ -67,6 +67,7 @@ class MenuViewController: UIViewController, GADInterstitialDelegate {
         
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         updateStarCoins()
         updateUnlockedThemes()
 <<<<<<< HEAD
@@ -89,6 +90,10 @@ class MenuViewController: UIViewController, GADInterstitialDelegate {
 =======
         NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.removeAds), name: NSNotification.Name(rawValue: Products.RemoveAds), object: nil)
 >>>>>>> faed6f0... Previous purchases restored
+=======
+        updateStarCoins()
+        updateUnlockedThemes()
+>>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
     }
     
     func reloadInterstitialAd() -> GADInterstitial {

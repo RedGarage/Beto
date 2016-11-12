@@ -87,12 +87,16 @@
 		3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		3CB11F151DD1163000C8BA87 /* Beto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beto.entitlements; sourceTree = "<group>"; };
 =======
 >>>>>>> 40b9ac8... Added 4 packages to IAP
 =======
 		3CB11F151DD1163000C8BA87 /* Beto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beto.entitlements; sourceTree = "<group>"; };
 >>>>>>> e549d9a... Star coins and themes save to iCloud
+=======
+		3CB11F151DD1163000C8BA87 /* Beto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beto.entitlements; sourceTree = "<group>"; };
+>>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
 		3CC9988D1D997DCD0024C283 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		3CC9988F1D997F8D0024C283 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		B9066C841DB028D300957001 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
@@ -415,6 +419,7 @@
 							};
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -425,6 +430,11 @@
 								enabled = 1;
 							};
 >>>>>>> e549d9a... Star coins and themes save to iCloud
+=======
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+>>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
 						};
 					};
 					B94F775E1C63FB7F00B3A78C = {

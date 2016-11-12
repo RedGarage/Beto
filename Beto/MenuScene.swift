@@ -88,10 +88,13 @@ class MenuScene: SKScene {
         
         view!.presentScene(menuScene, transition: transition)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 40b9ac8... Added 4 packages to IAP
 =======
 >>>>>>> faed6f0... Previous purchases restored
+=======
+>>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
     }
     
     func presentBoardScene() {
