@@ -1,834 +1,808 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
+archiveVersion = 1;
+classes = {
+};
+objectVersion = 46;
+objects = {
 
 /* Begin PBXBuildFile section */
-		00543AFB1C92ACCC006C3B52 /* DiceMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00543AFA1C92ACCC006C3B52 /* DiceMaker.swift */; };
-		3C8EE31B1DC958C7000DAF50 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */; };
-		3CC9988E1D997DCD0024C283 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9988D1D997DCD0024C283 /* IAPHelper.swift */; };
-		3CC998901D997F8D0024C283 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9988F1D997F8D0024C283 /* Products.swift */; };
-		B9066C851DB028D300957001 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9066C841DB028D300957001 /* GoogleMobileAds.framework */; };
-		B92354C31D683BC1006F653E /* RewardsDiceVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92354C21D683BC1006F653E /* RewardsDiceVault.swift */; };
-		B92354C51D6841AA006F653E /* RewardsDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92354C41D6841AA006F653E /* RewardsDice.swift */; };
-		B92354C91D685331006F653E /* OpenRewardsDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92354C81D685331006F653E /* OpenRewardsDice.swift */; };
-		B926070B1DC17FEE00FCB98C /* BuyStarCoinsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B926070A1DC17FEE00FCB98C /* BuyStarCoinsNode.swift */; };
-		B92C4D151DA76300005CADB2 /* Whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D141DA76300005CADB2 /* Whoosh.wav */; };
-		B92C4D171DA76460005CADB2 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D161DA76460005CADB2 /* Click.wav */; };
-		B92C4D191DA7686C005CADB2 /* Roll.wav in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D181DA7686C005CADB2 /* Roll.wav */; };
-		B92C4D1D1DA79167005CADB2 /* Lobby Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D1C1DA79167005CADB2 /* Lobby Time.mp3 */; };
-		B92C4D1F1DA79286005CADB2 /* Two Finger Johnny.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D1E1DA79286005CADB2 /* Two Finger Johnny.mp3 */; };
-		B92C4D211DA794DE005CADB2 /* George Street Shuffle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D201DA794DE005CADB2 /* George Street Shuffle.mp3 */; };
-		B93465A21C7D2B32008CDA26 /* GameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93465A11C7D2B32008CDA26 /* GameDataManager.swift */; };
-		B94F774B1C63FB7F00B3A78C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F774A1C63FB7F00B3A78C /* AppDelegate.swift */; };
-		B94F774F1C63FB7F00B3A78C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F774E1C63FB7F00B3A78C /* GameScene.swift */; };
-		B94F77511C63FB7F00B3A78C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F77501C63FB7F00B3A78C /* GameViewController.swift */; };
-		B94F77541C63FB7F00B3A78C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94F77521C63FB7F00B3A78C /* Main.storyboard */; };
-		B94F77591C63FB7F00B3A78C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94F77571C63FB7F00B3A78C /* LaunchScreen.storyboard */; };
-		B94F77641C63FB7F00B3A78C /* BetoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F77631C63FB7F00B3A78C /* BetoTests.swift */; };
-		B94F776F1C63FB7F00B3A78C /* BetoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F776E1C63FB7F00B3A78C /* BetoUITests.swift */; };
-		B94F77811C641CA600B3A78C /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F77801C641CA600B3A78C /* Square.swift */; };
-		B94F77941C645C7D00B3A78C /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F778E1C645C7D00B3A78C /* Chomp.wav */; };
-		B94F77951C645C7D00B3A78C /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F778F1C645C7D00B3A78C /* Drip.wav */; };
-		B94F77961C645C7D00B3A78C /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F77901C645C7D00B3A78C /* Error.wav */; };
-		B94F77971C645C7D00B3A78C /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F77911C645C7D00B3A78C /* Ka-Ching.wav */; };
-		B94F77981C645C7D00B3A78C /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B94F77921C645C7D00B3A78C /* Mining by Moonlight.mp3 */; };
-		B94F77991C645C7D00B3A78C /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F77931C645C7D00B3A78C /* Scrape.wav */; };
-		B950AF9C1C8A50EE00A74054 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950AF9B1C8A50EE00A74054 /* Coin.swift */; };
-		B95511DA1CF8301E005DB77E /* AchievementUnlocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95511D91CF8301E005DB77E /* AchievementUnlocked.swift */; };
-		B969C0FC1C7E8B2A00B24CDB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969C0FB1C7E8B2A00B24CDB /* Constant.swift */; };
-		B96F93781D5D829000617A0B /* PowerUpVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96F93771D5D829000617A0B /* PowerUpVault.swift */; };
-		B96F937A1D5DAB2E00617A0B /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96F93791D5DAB2E00617A0B /* PowerUp.swift */; };
-		B972CFFB1D124A9F0030119D /* DropdownNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B972CFFA1D124A9F0030119D /* DropdownNode.swift */; };
-		B972CFFD1D1254E30030119D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B972CFFC1D1254E30030119D /* Extensions.swift */; };
-		B973BA101CBE3A0700FF90F9 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B973BA0F1CBE3A0700FF90F9 /* AudioManager.swift */; };
-		B981110F1C7D650600E118EC /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B981110E1C7D650600E118EC /* GameData.plist */; };
-		B982DFC91C9266ED00D89ED5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B982DFC81C9266ED00D89ED5 /* MenuViewController.swift */; };
-		B983ED271D02283B00A9507F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983ED261D02283B00A9507F /* Theme.swift */; };
-		B983ED291D022A7F00A9507F /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983ED281D022A7F00A9507F /* ThemeManager.swift */; };
-		B983ED2B1D0293D200A9507F /* ThemesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983ED2A1D0293D200A9507F /* ThemesScene.swift */; };
-		B988697B1CB99CFE0017577D /* BoardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B988697A1CB99CFE0017577D /* BoardScene.swift */; };
-		B9A182021CF7C319004AA111 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A182011CF7C319004AA111 /* Achievement.swift */; };
-		B9A3BA4C1C6470C00006400D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9A3BA4B1C6470C00006400D /* Assets.xcassets */; };
-		B9AF29671D72C72F0008D375 /* RewardUnlocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF29661D72C72F0008D375 /* RewardUnlocked.swift */; };
-		B9C067291CF009170021AE6E /* AchievementNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C067281CF009170021AE6E /* AchievementNode.swift */; };
-		B9C0672B1CF0094F0021AE6E /* AchievementsListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0672A1CF0094F0021AE6E /* AchievementsListNode.swift */; };
-		B9C0672D1CF0423D0021AE6E /* AchievementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0672C1CF0423D0021AE6E /* AchievementsManager.swift */; };
-		B9C7E2C41C8B88A300879014 /* CoinVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7E2C31C8B88A300879014 /* CoinVault.swift */; };
-		B9CDB80F1CB8593C00BC8A57 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CDB80E1CB8593C00BC8A57 /* Settings.swift */; };
-		B9E6D21D1D9C7D5A00B010D1 /* BuyDiceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D21C1D9C7D5A00B010D1 /* BuyDiceNode.swift */; };
-		B9F1D2701C7571BC00E242F7 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1D26F1C7571BC00E242F7 /* MenuScene.swift */; };
-		B9F1D27A1C75AE6700E242F7 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1D2791C75AE6700E242F7 /* ButtonNode.swift */; };
-		B9FED4941D9BC7ED000AE061 /* BetoShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FED4931D9BC7ED000AE061 /* BetoShop.swift */; };
+00543AFB1C92ACCC006C3B52 /* DiceMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00543AFA1C92ACCC006C3B52 /* DiceMaker.swift */; };
+3C8EE31B1DC958C7000DAF50 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */; };
+3CC9988E1D997DCD0024C283 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9988D1D997DCD0024C283 /* IAPHelper.swift */; };
+3CC998901D997F8D0024C283 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC9988F1D997F8D0024C283 /* Products.swift */; };
+B9066C851DB028D300957001 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9066C841DB028D300957001 /* GoogleMobileAds.framework */; };
+B92354C31D683BC1006F653E /* RewardsDiceVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92354C21D683BC1006F653E /* RewardsDiceVault.swift */; };
+B92354C51D6841AA006F653E /* RewardsDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92354C41D6841AA006F653E /* RewardsDice.swift */; };
+B92354C91D685331006F653E /* OpenRewardsDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92354C81D685331006F653E /* OpenRewardsDice.swift */; };
+B926070B1DC17FEE00FCB98C /* BuyStarCoinsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B926070A1DC17FEE00FCB98C /* BuyStarCoinsNode.swift */; };
+B92C4D151DA76300005CADB2 /* Whoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D141DA76300005CADB2 /* Whoosh.wav */; };
+B92C4D171DA76460005CADB2 /* Click.wav in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D161DA76460005CADB2 /* Click.wav */; };
+B92C4D191DA7686C005CADB2 /* Roll.wav in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D181DA7686C005CADB2 /* Roll.wav */; };
+B92C4D1D1DA79167005CADB2 /* Lobby Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D1C1DA79167005CADB2 /* Lobby Time.mp3 */; };
+B92C4D1F1DA79286005CADB2 /* Two Finger Johnny.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D1E1DA79286005CADB2 /* Two Finger Johnny.mp3 */; };
+B92C4D211DA794DE005CADB2 /* George Street Shuffle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B92C4D201DA794DE005CADB2 /* George Street Shuffle.mp3 */; };
+B93465A21C7D2B32008CDA26 /* GameDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93465A11C7D2B32008CDA26 /* GameDataManager.swift */; };
+B94F774B1C63FB7F00B3A78C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F774A1C63FB7F00B3A78C /* AppDelegate.swift */; };
+B94F774F1C63FB7F00B3A78C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F774E1C63FB7F00B3A78C /* GameScene.swift */; };
+B94F77511C63FB7F00B3A78C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F77501C63FB7F00B3A78C /* GameViewController.swift */; };
+B94F77541C63FB7F00B3A78C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94F77521C63FB7F00B3A78C /* Main.storyboard */; };
+B94F77591C63FB7F00B3A78C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B94F77571C63FB7F00B3A78C /* LaunchScreen.storyboard */; };
+B94F77641C63FB7F00B3A78C /* BetoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F77631C63FB7F00B3A78C /* BetoTests.swift */; };
+B94F776F1C63FB7F00B3A78C /* BetoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F776E1C63FB7F00B3A78C /* BetoUITests.swift */; };
+B94F77811C641CA600B3A78C /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F77801C641CA600B3A78C /* Square.swift */; };
+B94F77941C645C7D00B3A78C /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F778E1C645C7D00B3A78C /* Chomp.wav */; };
+B94F77951C645C7D00B3A78C /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F778F1C645C7D00B3A78C /* Drip.wav */; };
+B94F77961C645C7D00B3A78C /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F77901C645C7D00B3A78C /* Error.wav */; };
+B94F77971C645C7D00B3A78C /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F77911C645C7D00B3A78C /* Ka-Ching.wav */; };
+B94F77981C645C7D00B3A78C /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B94F77921C645C7D00B3A78C /* Mining by Moonlight.mp3 */; };
+B94F77991C645C7D00B3A78C /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = B94F77931C645C7D00B3A78C /* Scrape.wav */; };
+B950AF9C1C8A50EE00A74054 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B950AF9B1C8A50EE00A74054 /* Coin.swift */; };
+B95511DA1CF8301E005DB77E /* AchievementUnlocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95511D91CF8301E005DB77E /* AchievementUnlocked.swift */; };
+B969C0FC1C7E8B2A00B24CDB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969C0FB1C7E8B2A00B24CDB /* Constant.swift */; };
+B96F93781D5D829000617A0B /* PowerUpVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96F93771D5D829000617A0B /* PowerUpVault.swift */; };
+B96F937A1D5DAB2E00617A0B /* PowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96F93791D5DAB2E00617A0B /* PowerUp.swift */; };
+B972CFFB1D124A9F0030119D /* DropdownNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B972CFFA1D124A9F0030119D /* DropdownNode.swift */; };
+B972CFFD1D1254E30030119D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B972CFFC1D1254E30030119D /* Extensions.swift */; };
+B973BA101CBE3A0700FF90F9 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B973BA0F1CBE3A0700FF90F9 /* AudioManager.swift */; };
+B981110F1C7D650600E118EC /* GameData.plist in Resources */ = {isa = PBXBuildFile; fileRef = B981110E1C7D650600E118EC /* GameData.plist */; };
+B982DFC91C9266ED00D89ED5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B982DFC81C9266ED00D89ED5 /* MenuViewController.swift */; };
+B983ED271D02283B00A9507F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983ED261D02283B00A9507F /* Theme.swift */; };
+B983ED291D022A7F00A9507F /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983ED281D022A7F00A9507F /* ThemeManager.swift */; };
+B983ED2B1D0293D200A9507F /* ThemesScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983ED2A1D0293D200A9507F /* ThemesScene.swift */; };
+B988697B1CB99CFE0017577D /* BoardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B988697A1CB99CFE0017577D /* BoardScene.swift */; };
+B9A182021CF7C319004AA111 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A182011CF7C319004AA111 /* Achievement.swift */; };
+B9A3BA4C1C6470C00006400D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9A3BA4B1C6470C00006400D /* Assets.xcassets */; };
+B9AF29671D72C72F0008D375 /* RewardUnlocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AF29661D72C72F0008D375 /* RewardUnlocked.swift */; };
+B9C067291CF009170021AE6E /* AchievementNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C067281CF009170021AE6E /* AchievementNode.swift */; };
+B9C0672B1CF0094F0021AE6E /* AchievementsListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0672A1CF0094F0021AE6E /* AchievementsListNode.swift */; };
+B9C0672D1CF0423D0021AE6E /* AchievementsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C0672C1CF0423D0021AE6E /* AchievementsManager.swift */; };
+B9C7E2C41C8B88A300879014 /* CoinVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C7E2C31C8B88A300879014 /* CoinVault.swift */; };
+B9CDB80F1CB8593C00BC8A57 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CDB80E1CB8593C00BC8A57 /* Settings.swift */; };
+B9E6D21D1D9C7D5A00B010D1 /* BuyDiceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E6D21C1D9C7D5A00B010D1 /* BuyDiceNode.swift */; };
+B9F1D2701C7571BC00E242F7 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1D26F1C7571BC00E242F7 /* MenuScene.swift */; };
+B9F1D27A1C75AE6700E242F7 /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F1D2791C75AE6700E242F7 /* ButtonNode.swift */; };
+B9FED4941D9BC7ED000AE061 /* BetoShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FED4931D9BC7ED000AE061 /* BetoShop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B94F77601C63FB7F00B3A78C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B94F773F1C63FB7F00B3A78C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B94F77461C63FB7F00B3A78C;
-			remoteInfo = Beto;
-		};
-		B94F776B1C63FB7F00B3A78C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B94F773F1C63FB7F00B3A78C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B94F77461C63FB7F00B3A78C;
-			remoteInfo = Beto;
-		};
+B94F77601C63FB7F00B3A78C /* PBXContainerItemProxy */ = {
+isa = PBXContainerItemProxy;
+containerPortal = B94F773F1C63FB7F00B3A78C /* Project object */;
+proxyType = 1;
+remoteGlobalIDString = B94F77461C63FB7F00B3A78C;
+remoteInfo = Beto;
+};
+B94F776B1C63FB7F00B3A78C /* PBXContainerItemProxy */ = {
+isa = PBXContainerItemProxy;
+containerPortal = B94F773F1C63FB7F00B3A78C /* Project object */;
+proxyType = 1;
+remoteGlobalIDString = B94F77461C63FB7F00B3A78C;
+remoteInfo = Beto;
+};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00543AFA1C92ACCC006C3B52 /* DiceMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceMaker.swift; sourceTree = "<group>"; };
-		3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-		3CB11F151DD1163000C8BA87 /* Beto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beto.entitlements; sourceTree = "<group>"; };
-=======
->>>>>>> 40b9ac8... Added 4 packages to IAP
-=======
-		3CB11F151DD1163000C8BA87 /* Beto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beto.entitlements; sourceTree = "<group>"; };
->>>>>>> e549d9a... Star coins and themes save to iCloud
-=======
-		3CB11F151DD1163000C8BA87 /* Beto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beto.entitlements; sourceTree = "<group>"; };
->>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
-		3CC9988D1D997DCD0024C283 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
-		3CC9988F1D997F8D0024C283 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
-		B9066C841DB028D300957001 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		B92354C21D683BC1006F653E /* RewardsDiceVault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsDiceVault.swift; sourceTree = "<group>"; };
-		B92354C41D6841AA006F653E /* RewardsDice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsDice.swift; sourceTree = "<group>"; };
-		B92354C81D685331006F653E /* OpenRewardsDice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenRewardsDice.swift; sourceTree = "<group>"; };
-		B926070A1DC17FEE00FCB98C /* BuyStarCoinsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyStarCoinsNode.swift; sourceTree = "<group>"; };
-		B92C4D141DA76300005CADB2 /* Whoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Whoosh.wav; sourceTree = "<group>"; };
-		B92C4D161DA76460005CADB2 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Click.wav; sourceTree = "<group>"; };
-		B92C4D181DA7686C005CADB2 /* Roll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Roll.wav; sourceTree = "<group>"; };
-		B92C4D1C1DA79167005CADB2 /* Lobby Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lobby Time.mp3"; sourceTree = "<group>"; };
-		B92C4D1E1DA79286005CADB2 /* Two Finger Johnny.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Two Finger Johnny.mp3"; sourceTree = "<group>"; };
-		B92C4D201DA794DE005CADB2 /* George Street Shuffle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "George Street Shuffle.mp3"; sourceTree = "<group>"; };
-		B93465A11C7D2B32008CDA26 /* GameDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataManager.swift; sourceTree = "<group>"; };
-		B94F77471C63FB7F00B3A78C /* Beto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beto.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B94F774A1C63FB7F00B3A78C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B94F774E1C63FB7F00B3A78C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		B94F77501C63FB7F00B3A78C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		B94F77531C63FB7F00B3A78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B94F77581C63FB7F00B3A78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B94F775A1C63FB7F00B3A78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B94F775F1C63FB7F00B3A78C /* BetoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B94F77631C63FB7F00B3A78C /* BetoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetoTests.swift; sourceTree = "<group>"; };
-		B94F77651C63FB7F00B3A78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B94F776A1C63FB7F00B3A78C /* BetoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B94F776E1C63FB7F00B3A78C /* BetoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetoUITests.swift; sourceTree = "<group>"; };
-		B94F77701C63FB7F00B3A78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B94F77801C641CA600B3A78C /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
-		B94F778E1C645C7D00B3A78C /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
-		B94F778F1C645C7D00B3A78C /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
-		B94F77901C645C7D00B3A78C /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
-		B94F77911C645C7D00B3A78C /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
-		B94F77921C645C7D00B3A78C /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
-		B94F77931C645C7D00B3A78C /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
-		B950AF9B1C8A50EE00A74054 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		B95511D91CF8301E005DB77E /* AchievementUnlocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementUnlocked.swift; sourceTree = "<group>"; };
-		B969C0FB1C7E8B2A00B24CDB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		B96F93771D5D829000617A0B /* PowerUpVault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerUpVault.swift; sourceTree = "<group>"; };
-		B96F93791D5DAB2E00617A0B /* PowerUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
-		B972CFFA1D124A9F0030119D /* DropdownNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownNode.swift; sourceTree = "<group>"; };
-		B972CFFC1D1254E30030119D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		B973BA0F1CBE3A0700FF90F9 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
-		B981110E1C7D650600E118EC /* GameData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
-		B982DFC81C9266ED00D89ED5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		B983ED261D02283B00A9507F /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		B983ED281D022A7F00A9507F /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		B983ED2A1D0293D200A9507F /* ThemesScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesScene.swift; sourceTree = "<group>"; };
-		B988697A1CB99CFE0017577D /* BoardScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardScene.swift; sourceTree = "<group>"; };
-		B9A182011CF7C319004AA111 /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
-		B9A3BA4B1C6470C00006400D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sounds/Assets.xcassets; sourceTree = "<group>"; };
-		B9AF29661D72C72F0008D375 /* RewardUnlocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUnlocked.swift; sourceTree = "<group>"; };
-		B9C067281CF009170021AE6E /* AchievementNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementNode.swift; sourceTree = "<group>"; };
-		B9C0672A1CF0094F0021AE6E /* AchievementsListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsListNode.swift; sourceTree = "<group>"; };
-		B9C0672C1CF0423D0021AE6E /* AchievementsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsManager.swift; sourceTree = "<group>"; };
-		B9C7E2C31C8B88A300879014 /* CoinVault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinVault.swift; sourceTree = "<group>"; };
-		B9CDB80E1CB8593C00BC8A57 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		B9E6D21C1D9C7D5A00B010D1 /* BuyDiceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyDiceNode.swift; sourceTree = "<group>"; };
-		B9F1D26F1C7571BC00E242F7 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
-		B9F1D2791C75AE6700E242F7 /* ButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
-		B9FED4931D9BC7ED000AE061 /* BetoShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetoShop.swift; sourceTree = "<group>"; };
+00543AFA1C92ACCC006C3B52 /* DiceMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceMaker.swift; sourceTree = "<group>"; };
+3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+3CB11F151DD1163000C8BA87 /* Beto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beto.entitlements; sourceTree = "<group>"; };
+3CC9988D1D997DCD0024C283 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+3CC9988F1D997F8D0024C283 /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+B9066C841DB028D300957001 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+B92354C21D683BC1006F653E /* RewardsDiceVault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsDiceVault.swift; sourceTree = "<group>"; };
+B92354C41D6841AA006F653E /* RewardsDice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsDice.swift; sourceTree = "<group>"; };
+B92354C81D685331006F653E /* OpenRewardsDice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenRewardsDice.swift; sourceTree = "<group>"; };
+B926070A1DC17FEE00FCB98C /* BuyStarCoinsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyStarCoinsNode.swift; sourceTree = "<group>"; };
+B92C4D141DA76300005CADB2 /* Whoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Whoosh.wav; sourceTree = "<group>"; };
+B92C4D161DA76460005CADB2 /* Click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Click.wav; sourceTree = "<group>"; };
+B92C4D181DA7686C005CADB2 /* Roll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Roll.wav; sourceTree = "<group>"; };
+B92C4D1C1DA79167005CADB2 /* Lobby Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lobby Time.mp3"; sourceTree = "<group>"; };
+B92C4D1E1DA79286005CADB2 /* Two Finger Johnny.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Two Finger Johnny.mp3"; sourceTree = "<group>"; };
+B92C4D201DA794DE005CADB2 /* George Street Shuffle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "George Street Shuffle.mp3"; sourceTree = "<group>"; };
+B93465A11C7D2B32008CDA26 /* GameDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDataManager.swift; sourceTree = "<group>"; };
+B94F77471C63FB7F00B3A78C /* Beto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+B94F774A1C63FB7F00B3A78C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+B94F774E1C63FB7F00B3A78C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+B94F77501C63FB7F00B3A78C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+B94F77531C63FB7F00B3A78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+B94F77581C63FB7F00B3A78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+B94F775A1C63FB7F00B3A78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+B94F775F1C63FB7F00B3A78C /* BetoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+B94F77631C63FB7F00B3A78C /* BetoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetoTests.swift; sourceTree = "<group>"; };
+B94F77651C63FB7F00B3A78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+B94F776A1C63FB7F00B3A78C /* BetoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+B94F776E1C63FB7F00B3A78C /* BetoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetoUITests.swift; sourceTree = "<group>"; };
+B94F77701C63FB7F00B3A78C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+B94F77801C641CA600B3A78C /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+B94F778E1C645C7D00B3A78C /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+B94F778F1C645C7D00B3A78C /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+B94F77901C645C7D00B3A78C /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+B94F77911C645C7D00B3A78C /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+B94F77921C645C7D00B3A78C /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+B94F77931C645C7D00B3A78C /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+B950AF9B1C8A50EE00A74054 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+B95511D91CF8301E005DB77E /* AchievementUnlocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementUnlocked.swift; sourceTree = "<group>"; };
+B969C0FB1C7E8B2A00B24CDB /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+B96F93771D5D829000617A0B /* PowerUpVault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerUpVault.swift; sourceTree = "<group>"; };
+B96F93791D5DAB2E00617A0B /* PowerUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerUp.swift; sourceTree = "<group>"; };
+B972CFFA1D124A9F0030119D /* DropdownNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownNode.swift; sourceTree = "<group>"; };
+B972CFFC1D1254E30030119D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+B973BA0F1CBE3A0700FF90F9 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+B981110E1C7D650600E118EC /* GameData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameData.plist; sourceTree = "<group>"; };
+B982DFC81C9266ED00D89ED5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+B983ED261D02283B00A9507F /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+B983ED281D022A7F00A9507F /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+B983ED2A1D0293D200A9507F /* ThemesScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesScene.swift; sourceTree = "<group>"; };
+B988697A1CB99CFE0017577D /* BoardScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardScene.swift; sourceTree = "<group>"; };
+B9A182011CF7C319004AA111 /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+B9A3BA4B1C6470C00006400D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sounds/Assets.xcassets; sourceTree = "<group>"; };
+B9AF29661D72C72F0008D375 /* RewardUnlocked.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardUnlocked.swift; sourceTree = "<group>"; };
+B9C067281CF009170021AE6E /* AchievementNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementNode.swift; sourceTree = "<group>"; };
+B9C0672A1CF0094F0021AE6E /* AchievementsListNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsListNode.swift; sourceTree = "<group>"; };
+B9C0672C1CF0423D0021AE6E /* AchievementsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsManager.swift; sourceTree = "<group>"; };
+B9C7E2C31C8B88A300879014 /* CoinVault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinVault.swift; sourceTree = "<group>"; };
+B9CDB80E1CB8593C00BC8A57 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+B9E6D21C1D9C7D5A00B010D1 /* BuyDiceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyDiceNode.swift; sourceTree = "<group>"; };
+B9F1D26F1C7571BC00E242F7 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+B9F1D2791C75AE6700E242F7 /* ButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+B9FED4931D9BC7ED000AE061 /* BetoShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetoShop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B94F77441C63FB7F00B3A78C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9066C851DB028D300957001 /* GoogleMobileAds.framework in Frameworks */,
-				3C8EE31B1DC958C7000DAF50 /* StoreKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B94F775C1C63FB7F00B3A78C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B94F77671C63FB7F00B3A78C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+B94F77441C63FB7F00B3A78C /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+B9066C851DB028D300957001 /* GoogleMobileAds.framework in Frameworks */,
+3C8EE31B1DC958C7000DAF50 /* StoreKit.framework in Frameworks */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+B94F775C1C63FB7F00B3A78C /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+B94F77671C63FB7F00B3A78C /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C8EE3191DC958C7000DAF50 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B92354C11D683B86006F653E /* ButtonNodes */ = {
-			isa = PBXGroup;
-			children = (
-				B9F1D2791C75AE6700E242F7 /* ButtonNode.swift */,
-				B94F77801C641CA600B3A78C /* Square.swift */,
-				B950AF9B1C8A50EE00A74054 /* Coin.swift */,
-				B96F93791D5DAB2E00617A0B /* PowerUp.swift */,
-				B92354C41D6841AA006F653E /* RewardsDice.swift */,
-			);
-			name = ButtonNodes;
-			sourceTree = "<group>";
-		};
-		B94F773E1C63FB7F00B3A78C = {
-			isa = PBXGroup;
-			children = (
-				B9066C841DB028D300957001 /* GoogleMobileAds.framework */,
-				B94F77491C63FB7F00B3A78C /* Beto */,
-				B94F77621C63FB7F00B3A78C /* BetoTests */,
-				B94F776D1C63FB7F00B3A78C /* BetoUITests */,
-				B94F77481C63FB7F00B3A78C /* Products */,
-				3C8EE3191DC958C7000DAF50 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		B94F77481C63FB7F00B3A78C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B94F77471C63FB7F00B3A78C /* Beto.app */,
-				B94F775F1C63FB7F00B3A78C /* BetoTests.xctest */,
-				B94F776A1C63FB7F00B3A78C /* BetoUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B94F77491C63FB7F00B3A78C /* Beto */ = {
-			isa = PBXGroup;
-			children = (
-				3CB11F151DD1163000C8BA87 /* Beto.entitlements */,
-				B94F774A1C63FB7F00B3A78C /* AppDelegate.swift */,
-				B94F77881C642CF100B3A78C /* Models */,
-				B94F77891C642D1500B3A78C /* Views */,
-				B94F778A1C642D2100B3A78C /* Controller */,
-				B94F778D1C645C7D00B3A78C /* Sounds */,
-				B9A3BA4B1C6470C00006400D /* Assets.xcassets */,
-				B94F77521C63FB7F00B3A78C /* Main.storyboard */,
-				B94F77571C63FB7F00B3A78C /* LaunchScreen.storyboard */,
-				B94F775A1C63FB7F00B3A78C /* Info.plist */,
-				B981110E1C7D650600E118EC /* GameData.plist */,
-			);
-			path = Beto;
-			sourceTree = "<group>";
-		};
-		B94F77621C63FB7F00B3A78C /* BetoTests */ = {
-			isa = PBXGroup;
-			children = (
-				B94F77631C63FB7F00B3A78C /* BetoTests.swift */,
-				B94F77651C63FB7F00B3A78C /* Info.plist */,
-			);
-			path = BetoTests;
-			sourceTree = "<group>";
-		};
-		B94F776D1C63FB7F00B3A78C /* BetoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B94F776E1C63FB7F00B3A78C /* BetoUITests.swift */,
-				B94F77701C63FB7F00B3A78C /* Info.plist */,
-			);
-			path = BetoUITests;
-			sourceTree = "<group>";
-		};
-		B94F77881C642CF100B3A78C /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B92354C11D683B86006F653E /* ButtonNodes */,
-				B9C9A18D1D57317F00D68C62 /* DropdownNodes */,
-				B9CDB80E1CB8593C00BC8A57 /* Settings.swift */,
-				B969C0FB1C7E8B2A00B24CDB /* Constant.swift */,
-				00543AFA1C92ACCC006C3B52 /* DiceMaker.swift */,
-				B983ED261D02283B00A9507F /* Theme.swift */,
-				B983ED281D022A7F00A9507F /* ThemeManager.swift */,
-				B9A182011CF7C319004AA111 /* Achievement.swift */,
-				B9C0672C1CF0423D0021AE6E /* AchievementsManager.swift */,
-				B973BA0F1CBE3A0700FF90F9 /* AudioManager.swift */,
-				B93465A11C7D2B32008CDA26 /* GameDataManager.swift */,
-				B972CFFC1D1254E30030119D /* Extensions.swift */,
-				3CC9988D1D997DCD0024C283 /* IAPHelper.swift */,
-				3CC9988F1D997F8D0024C283 /* Products.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		B94F77891C642D1500B3A78C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B94F774E1C63FB7F00B3A78C /* GameScene.swift */,
-				B9F1D26F1C7571BC00E242F7 /* MenuScene.swift */,
-				B988697A1CB99CFE0017577D /* BoardScene.swift */,
-				B983ED2A1D0293D200A9507F /* ThemesScene.swift */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		B94F778A1C642D2100B3A78C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				B94F77501C63FB7F00B3A78C /* GameViewController.swift */,
-				B982DFC81C9266ED00D89ED5 /* MenuViewController.swift */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		B94F778D1C645C7D00B3A78C /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				B92C4D181DA7686C005CADB2 /* Roll.wav */,
-				B92C4D161DA76460005CADB2 /* Click.wav */,
-				B92C4D141DA76300005CADB2 /* Whoosh.wav */,
-				B94F778E1C645C7D00B3A78C /* Chomp.wav */,
-				B94F778F1C645C7D00B3A78C /* Drip.wav */,
-				B94F77901C645C7D00B3A78C /* Error.wav */,
-				B94F77911C645C7D00B3A78C /* Ka-Ching.wav */,
-				B92C4D201DA794DE005CADB2 /* George Street Shuffle.mp3 */,
-				B92C4D1E1DA79286005CADB2 /* Two Finger Johnny.mp3 */,
-				B92C4D1C1DA79167005CADB2 /* Lobby Time.mp3 */,
-				B94F77921C645C7D00B3A78C /* Mining by Moonlight.mp3 */,
-				B94F77931C645C7D00B3A78C /* Scrape.wav */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
-		B9C9A18D1D57317F00D68C62 /* DropdownNodes */ = {
-			isa = PBXGroup;
-			children = (
-				B972CFFA1D124A9F0030119D /* DropdownNode.swift */,
-				B9C7E2C31C8B88A300879014 /* CoinVault.swift */,
-				B96F93771D5D829000617A0B /* PowerUpVault.swift */,
-				B92354C21D683BC1006F653E /* RewardsDiceVault.swift */,
-				B9AF29661D72C72F0008D375 /* RewardUnlocked.swift */,
-				B92354C81D685331006F653E /* OpenRewardsDice.swift */,
-				B9C067281CF009170021AE6E /* AchievementNode.swift */,
-				B9C0672A1CF0094F0021AE6E /* AchievementsListNode.swift */,
-				B95511D91CF8301E005DB77E /* AchievementUnlocked.swift */,
-				B9FED4931D9BC7ED000AE061 /* BetoShop.swift */,
-				B9E6D21C1D9C7D5A00B010D1 /* BuyDiceNode.swift */,
-				B926070A1DC17FEE00FCB98C /* BuyStarCoinsNode.swift */,
-			);
-			name = DropdownNodes;
-			sourceTree = "<group>";
-		};
+3C8EE3191DC958C7000DAF50 /* Frameworks */ = {
+isa = PBXGroup;
+children = (
+3C8EE31A1DC958C7000DAF50 /* StoreKit.framework */,
+);
+name = Frameworks;
+sourceTree = "<group>";
+};
+B92354C11D683B86006F653E /* ButtonNodes */ = {
+isa = PBXGroup;
+children = (
+B9F1D2791C75AE6700E242F7 /* ButtonNode.swift */,
+B94F77801C641CA600B3A78C /* Square.swift */,
+B950AF9B1C8A50EE00A74054 /* Coin.swift */,
+B96F93791D5DAB2E00617A0B /* PowerUp.swift */,
+B92354C41D6841AA006F653E /* RewardsDice.swift */,
+);
+name = ButtonNodes;
+sourceTree = "<group>";
+};
+B94F773E1C63FB7F00B3A78C = {
+isa = PBXGroup;
+children = (
+B9066C841DB028D300957001 /* GoogleMobileAds.framework */,
+B94F77491C63FB7F00B3A78C /* Beto */,
+B94F77621C63FB7F00B3A78C /* BetoTests */,
+B94F776D1C63FB7F00B3A78C /* BetoUITests */,
+B94F77481C63FB7F00B3A78C /* Products */,
+3C8EE3191DC958C7000DAF50 /* Frameworks */,
+);
+sourceTree = "<group>";
+};
+B94F77481C63FB7F00B3A78C /* Products */ = {
+isa = PBXGroup;
+children = (
+B94F77471C63FB7F00B3A78C /* Beto.app */,
+B94F775F1C63FB7F00B3A78C /* BetoTests.xctest */,
+B94F776A1C63FB7F00B3A78C /* BetoUITests.xctest */,
+);
+name = Products;
+sourceTree = "<group>";
+};
+B94F77491C63FB7F00B3A78C /* Beto */ = {
+isa = PBXGroup;
+children = (
+3CB11F151DD1163000C8BA87 /* Beto.entitlements */,
+B94F774A1C63FB7F00B3A78C /* AppDelegate.swift */,
+B94F77881C642CF100B3A78C /* Models */,
+B94F77891C642D1500B3A78C /* Views */,
+B94F778A1C642D2100B3A78C /* Controller */,
+B94F778D1C645C7D00B3A78C /* Sounds */,
+B9A3BA4B1C6470C00006400D /* Assets.xcassets */,
+B94F77521C63FB7F00B3A78C /* Main.storyboard */,
+B94F77571C63FB7F00B3A78C /* LaunchScreen.storyboard */,
+B94F775A1C63FB7F00B3A78C /* Info.plist */,
+B981110E1C7D650600E118EC /* GameData.plist */,
+);
+path = Beto;
+sourceTree = "<group>";
+};
+B94F77621C63FB7F00B3A78C /* BetoTests */ = {
+isa = PBXGroup;
+children = (
+B94F77631C63FB7F00B3A78C /* BetoTests.swift */,
+B94F77651C63FB7F00B3A78C /* Info.plist */,
+);
+path = BetoTests;
+sourceTree = "<group>";
+};
+B94F776D1C63FB7F00B3A78C /* BetoUITests */ = {
+isa = PBXGroup;
+children = (
+B94F776E1C63FB7F00B3A78C /* BetoUITests.swift */,
+B94F77701C63FB7F00B3A78C /* Info.plist */,
+);
+path = BetoUITests;
+sourceTree = "<group>";
+};
+B94F77881C642CF100B3A78C /* Models */ = {
+isa = PBXGroup;
+children = (
+B92354C11D683B86006F653E /* ButtonNodes */,
+B9C9A18D1D57317F00D68C62 /* DropdownNodes */,
+B9CDB80E1CB8593C00BC8A57 /* Settings.swift */,
+B969C0FB1C7E8B2A00B24CDB /* Constant.swift */,
+00543AFA1C92ACCC006C3B52 /* DiceMaker.swift */,
+B983ED261D02283B00A9507F /* Theme.swift */,
+B983ED281D022A7F00A9507F /* ThemeManager.swift */,
+B9A182011CF7C319004AA111 /* Achievement.swift */,
+B9C0672C1CF0423D0021AE6E /* AchievementsManager.swift */,
+B973BA0F1CBE3A0700FF90F9 /* AudioManager.swift */,
+B93465A11C7D2B32008CDA26 /* GameDataManager.swift */,
+B972CFFC1D1254E30030119D /* Extensions.swift */,
+3CC9988D1D997DCD0024C283 /* IAPHelper.swift */,
+3CC9988F1D997F8D0024C283 /* Products.swift */,
+);
+name = Models;
+sourceTree = "<group>";
+};
+B94F77891C642D1500B3A78C /* Views */ = {
+isa = PBXGroup;
+children = (
+B94F774E1C63FB7F00B3A78C /* GameScene.swift */,
+B9F1D26F1C7571BC00E242F7 /* MenuScene.swift */,
+B988697A1CB99CFE0017577D /* BoardScene.swift */,
+B983ED2A1D0293D200A9507F /* ThemesScene.swift */,
+);
+name = Views;
+sourceTree = "<group>";
+};
+B94F778A1C642D2100B3A78C /* Controller */ = {
+isa = PBXGroup;
+children = (
+B94F77501C63FB7F00B3A78C /* GameViewController.swift */,
+B982DFC81C9266ED00D89ED5 /* MenuViewController.swift */,
+);
+name = Controller;
+sourceTree = "<group>";
+};
+B94F778D1C645C7D00B3A78C /* Sounds */ = {
+isa = PBXGroup;
+children = (
+B92C4D181DA7686C005CADB2 /* Roll.wav */,
+B92C4D161DA76460005CADB2 /* Click.wav */,
+B92C4D141DA76300005CADB2 /* Whoosh.wav */,
+B94F778E1C645C7D00B3A78C /* Chomp.wav */,
+B94F778F1C645C7D00B3A78C /* Drip.wav */,
+B94F77901C645C7D00B3A78C /* Error.wav */,
+B94F77911C645C7D00B3A78C /* Ka-Ching.wav */,
+B92C4D201DA794DE005CADB2 /* George Street Shuffle.mp3 */,
+B92C4D1E1DA79286005CADB2 /* Two Finger Johnny.mp3 */,
+B92C4D1C1DA79167005CADB2 /* Lobby Time.mp3 */,
+B94F77921C645C7D00B3A78C /* Mining by Moonlight.mp3 */,
+B94F77931C645C7D00B3A78C /* Scrape.wav */,
+);
+path = Sounds;
+sourceTree = "<group>";
+};
+B9C9A18D1D57317F00D68C62 /* DropdownNodes */ = {
+isa = PBXGroup;
+children = (
+B972CFFA1D124A9F0030119D /* DropdownNode.swift */,
+B9C7E2C31C8B88A300879014 /* CoinVault.swift */,
+B96F93771D5D829000617A0B /* PowerUpVault.swift */,
+B92354C21D683BC1006F653E /* RewardsDiceVault.swift */,
+B9AF29661D72C72F0008D375 /* RewardUnlocked.swift */,
+B92354C81D685331006F653E /* OpenRewardsDice.swift */,
+B9C067281CF009170021AE6E /* AchievementNode.swift */,
+B9C0672A1CF0094F0021AE6E /* AchievementsListNode.swift */,
+B95511D91CF8301E005DB77E /* AchievementUnlocked.swift */,
+B9FED4931D9BC7ED000AE061 /* BetoShop.swift */,
+B9E6D21C1D9C7D5A00B010D1 /* BuyDiceNode.swift */,
+B926070A1DC17FEE00FCB98C /* BuyStarCoinsNode.swift */,
+);
+name = DropdownNodes;
+sourceTree = "<group>";
+};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B94F77461C63FB7F00B3A78C /* Beto */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B94F77731C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "Beto" */;
-			buildPhases = (
-				B94F77431C63FB7F00B3A78C /* Sources */,
-				B94F77441C63FB7F00B3A78C /* Frameworks */,
-				B94F77451C63FB7F00B3A78C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Beto;
-			productName = Beto;
-			productReference = B94F77471C63FB7F00B3A78C /* Beto.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B94F775E1C63FB7F00B3A78C /* BetoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B94F77761C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "BetoTests" */;
-			buildPhases = (
-				B94F775B1C63FB7F00B3A78C /* Sources */,
-				B94F775C1C63FB7F00B3A78C /* Frameworks */,
-				B94F775D1C63FB7F00B3A78C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B94F77611C63FB7F00B3A78C /* PBXTargetDependency */,
-			);
-			name = BetoTests;
-			productName = BetoTests;
-			productReference = B94F775F1C63FB7F00B3A78C /* BetoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B94F77691C63FB7F00B3A78C /* BetoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B94F77791C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "BetoUITests" */;
-			buildPhases = (
-				B94F77661C63FB7F00B3A78C /* Sources */,
-				B94F77671C63FB7F00B3A78C /* Frameworks */,
-				B94F77681C63FB7F00B3A78C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B94F776C1C63FB7F00B3A78C /* PBXTargetDependency */,
-			);
-			name = BetoUITests;
-			productName = BetoUITests;
-			productReference = B94F776A1C63FB7F00B3A78C /* BetoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+B94F77461C63FB7F00B3A78C /* Beto */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = B94F77731C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "Beto" */;
+buildPhases = (
+B94F77431C63FB7F00B3A78C /* Sources */,
+B94F77441C63FB7F00B3A78C /* Frameworks */,
+B94F77451C63FB7F00B3A78C /* Resources */,
+);
+buildRules = (
+);
+dependencies = (
+);
+name = Beto;
+productName = Beto;
+productReference = B94F77471C63FB7F00B3A78C /* Beto.app */;
+productType = "com.apple.product-type.application";
+};
+B94F775E1C63FB7F00B3A78C /* BetoTests */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = B94F77761C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "BetoTests" */;
+buildPhases = (
+B94F775B1C63FB7F00B3A78C /* Sources */,
+B94F775C1C63FB7F00B3A78C /* Frameworks */,
+B94F775D1C63FB7F00B3A78C /* Resources */,
+);
+buildRules = (
+);
+dependencies = (
+B94F77611C63FB7F00B3A78C /* PBXTargetDependency */,
+);
+name = BetoTests;
+productName = BetoTests;
+productReference = B94F775F1C63FB7F00B3A78C /* BetoTests.xctest */;
+productType = "com.apple.product-type.bundle.unit-test";
+};
+B94F77691C63FB7F00B3A78C /* BetoUITests */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = B94F77791C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "BetoUITests" */;
+buildPhases = (
+B94F77661C63FB7F00B3A78C /* Sources */,
+B94F77671C63FB7F00B3A78C /* Frameworks */,
+B94F77681C63FB7F00B3A78C /* Resources */,
+);
+buildRules = (
+);
+dependencies = (
+B94F776C1C63FB7F00B3A78C /* PBXTargetDependency */,
+);
+name = BetoUITests;
+productName = BetoUITests;
+productReference = B94F776A1C63FB7F00B3A78C /* BetoUITests.xctest */;
+productType = "com.apple.product-type.bundle.ui-testing";
+};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B94F773F1C63FB7F00B3A78C /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = redgarage;
-				TargetAttributes = {
-					B94F77461C63FB7F00B3A78C = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = FC9822E58L;
-						LastSwiftMigration = 0800;
-						SystemCapabilities = {
-							com.apple.InAppPurchase = {
-								enabled = 1;
-							};
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-							com.apple.iCloud = {
-								enabled = 1;
-							};
-=======
->>>>>>> 40b9ac8... Added 4 packages to IAP
-=======
-							com.apple.iCloud = {
-								enabled = 1;
-							};
->>>>>>> e549d9a... Star coins and themes save to iCloud
-=======
-							com.apple.iCloud = {
-								enabled = 1;
-							};
->>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
-						};
-					};
-					B94F775E1C63FB7F00B3A78C = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
-						TestTargetID = B94F77461C63FB7F00B3A78C;
-					};
-					B94F77691C63FB7F00B3A78C = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
-						TestTargetID = B94F77461C63FB7F00B3A78C;
-					};
-				};
-			};
-			buildConfigurationList = B94F77421C63FB7F00B3A78C /* Build configuration list for PBXProject "Beto" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = B94F773E1C63FB7F00B3A78C;
-			productRefGroup = B94F77481C63FB7F00B3A78C /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B94F77461C63FB7F00B3A78C /* Beto */,
-				B94F775E1C63FB7F00B3A78C /* BetoTests */,
-				B94F77691C63FB7F00B3A78C /* BetoUITests */,
-			);
-		};
+B94F773F1C63FB7F00B3A78C /* Project object */ = {
+isa = PBXProject;
+attributes = {
+LastSwiftUpdateCheck = 0720;
+LastUpgradeCheck = 0800;
+ORGANIZATIONNAME = redgarage;
+TargetAttributes = {
+B94F77461C63FB7F00B3A78C = {
+CreatedOnToolsVersion = 7.2;
+DevelopmentTeam = FC9822E58L;
+LastSwiftMigration = 0800;
+SystemCapabilities = {
+com.apple.InAppPurchase = {
+enabled = 1;
+};
+com.apple.iCloud = {
+enabled = 1;
+};
+};
+};
+B94F775E1C63FB7F00B3A78C = {
+CreatedOnToolsVersion = 7.2;
+LastSwiftMigration = 0800;
+TestTargetID = B94F77461C63FB7F00B3A78C;
+};
+B94F77691C63FB7F00B3A78C = {
+CreatedOnToolsVersion = 7.2;
+LastSwiftMigration = 0800;
+TestTargetID = B94F77461C63FB7F00B3A78C;
+};
+};
+};
+buildConfigurationList = B94F77421C63FB7F00B3A78C /* Build configuration list for PBXProject "Beto" */;
+compatibilityVersion = "Xcode 3.2";
+developmentRegion = English;
+hasScannedForEncodings = 0;
+knownRegions = (
+en,
+Base,
+);
+mainGroup = B94F773E1C63FB7F00B3A78C;
+productRefGroup = B94F77481C63FB7F00B3A78C /* Products */;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+B94F77461C63FB7F00B3A78C /* Beto */,
+B94F775E1C63FB7F00B3A78C /* BetoTests */,
+B94F77691C63FB7F00B3A78C /* BetoUITests */,
+);
+};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B94F77451C63FB7F00B3A78C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B981110F1C7D650600E118EC /* GameData.plist in Resources */,
-				B94F77991C645C7D00B3A78C /* Scrape.wav in Resources */,
-				B94F77981C645C7D00B3A78C /* Mining by Moonlight.mp3 in Resources */,
-				B94F77951C645C7D00B3A78C /* Drip.wav in Resources */,
-				B92C4D191DA7686C005CADB2 /* Roll.wav in Resources */,
-				B9A3BA4C1C6470C00006400D /* Assets.xcassets in Resources */,
-				B94F77971C645C7D00B3A78C /* Ka-Ching.wav in Resources */,
-				B94F77961C645C7D00B3A78C /* Error.wav in Resources */,
-				B94F77591C63FB7F00B3A78C /* LaunchScreen.storyboard in Resources */,
-				B94F77541C63FB7F00B3A78C /* Main.storyboard in Resources */,
-				B92C4D1D1DA79167005CADB2 /* Lobby Time.mp3 in Resources */,
-				B92C4D171DA76460005CADB2 /* Click.wav in Resources */,
-				B92C4D151DA76300005CADB2 /* Whoosh.wav in Resources */,
-				B92C4D211DA794DE005CADB2 /* George Street Shuffle.mp3 in Resources */,
-				B92C4D1F1DA79286005CADB2 /* Two Finger Johnny.mp3 in Resources */,
-				B94F77941C645C7D00B3A78C /* Chomp.wav in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B94F775D1C63FB7F00B3A78C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B94F77681C63FB7F00B3A78C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+B94F77451C63FB7F00B3A78C /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+B981110F1C7D650600E118EC /* GameData.plist in Resources */,
+B94F77991C645C7D00B3A78C /* Scrape.wav in Resources */,
+B94F77981C645C7D00B3A78C /* Mining by Moonlight.mp3 in Resources */,
+B94F77951C645C7D00B3A78C /* Drip.wav in Resources */,
+B92C4D191DA7686C005CADB2 /* Roll.wav in Resources */,
+B9A3BA4C1C6470C00006400D /* Assets.xcassets in Resources */,
+B94F77971C645C7D00B3A78C /* Ka-Ching.wav in Resources */,
+B94F77961C645C7D00B3A78C /* Error.wav in Resources */,
+B94F77591C63FB7F00B3A78C /* LaunchScreen.storyboard in Resources */,
+B94F77541C63FB7F00B3A78C /* Main.storyboard in Resources */,
+B92C4D1D1DA79167005CADB2 /* Lobby Time.mp3 in Resources */,
+B92C4D171DA76460005CADB2 /* Click.wav in Resources */,
+B92C4D151DA76300005CADB2 /* Whoosh.wav in Resources */,
+B92C4D211DA794DE005CADB2 /* George Street Shuffle.mp3 in Resources */,
+B92C4D1F1DA79286005CADB2 /* Two Finger Johnny.mp3 in Resources */,
+B94F77941C645C7D00B3A78C /* Chomp.wav in Resources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+B94F775D1C63FB7F00B3A78C /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+B94F77681C63FB7F00B3A78C /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B94F77431C63FB7F00B3A78C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B983ED271D02283B00A9507F /* Theme.swift in Sources */,
-				B92354C91D685331006F653E /* OpenRewardsDice.swift in Sources */,
-				B92354C31D683BC1006F653E /* RewardsDiceVault.swift in Sources */,
-				B96F93781D5D829000617A0B /* PowerUpVault.swift in Sources */,
-				3CC9988E1D997DCD0024C283 /* IAPHelper.swift in Sources */,
-				B94F77811C641CA600B3A78C /* Square.swift in Sources */,
-				B95511DA1CF8301E005DB77E /* AchievementUnlocked.swift in Sources */,
-				B973BA101CBE3A0700FF90F9 /* AudioManager.swift in Sources */,
-				B9A182021CF7C319004AA111 /* Achievement.swift in Sources */,
-				B983ED2B1D0293D200A9507F /* ThemesScene.swift in Sources */,
-				B9F1D2701C7571BC00E242F7 /* MenuScene.swift in Sources */,
-				B969C0FC1C7E8B2A00B24CDB /* Constant.swift in Sources */,
-				3CC998901D997F8D0024C283 /* Products.swift in Sources */,
-				B94F774F1C63FB7F00B3A78C /* GameScene.swift in Sources */,
-				B950AF9C1C8A50EE00A74054 /* Coin.swift in Sources */,
-				B9FED4941D9BC7ED000AE061 /* BetoShop.swift in Sources */,
-				B988697B1CB99CFE0017577D /* BoardScene.swift in Sources */,
-				B94F77511C63FB7F00B3A78C /* GameViewController.swift in Sources */,
-				B972CFFB1D124A9F0030119D /* DropdownNode.swift in Sources */,
-				B982DFC91C9266ED00D89ED5 /* MenuViewController.swift in Sources */,
-				B9AF29671D72C72F0008D375 /* RewardUnlocked.swift in Sources */,
-				B972CFFD1D1254E30030119D /* Extensions.swift in Sources */,
-				B93465A21C7D2B32008CDA26 /* GameDataManager.swift in Sources */,
-				B94F774B1C63FB7F00B3A78C /* AppDelegate.swift in Sources */,
-				B9C067291CF009170021AE6E /* AchievementNode.swift in Sources */,
-				B9C0672B1CF0094F0021AE6E /* AchievementsListNode.swift in Sources */,
-				B9C0672D1CF0423D0021AE6E /* AchievementsManager.swift in Sources */,
-				B96F937A1D5DAB2E00617A0B /* PowerUp.swift in Sources */,
-				00543AFB1C92ACCC006C3B52 /* DiceMaker.swift in Sources */,
-				B9E6D21D1D9C7D5A00B010D1 /* BuyDiceNode.swift in Sources */,
-				B9F1D27A1C75AE6700E242F7 /* ButtonNode.swift in Sources */,
-				B9C7E2C41C8B88A300879014 /* CoinVault.swift in Sources */,
-				B92354C51D6841AA006F653E /* RewardsDice.swift in Sources */,
-				B926070B1DC17FEE00FCB98C /* BuyStarCoinsNode.swift in Sources */,
-				B9CDB80F1CB8593C00BC8A57 /* Settings.swift in Sources */,
-				B983ED291D022A7F00A9507F /* ThemeManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B94F775B1C63FB7F00B3A78C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B94F77641C63FB7F00B3A78C /* BetoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B94F77661C63FB7F00B3A78C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B94F776F1C63FB7F00B3A78C /* BetoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+B94F77431C63FB7F00B3A78C /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+B983ED271D02283B00A9507F /* Theme.swift in Sources */,
+B92354C91D685331006F653E /* OpenRewardsDice.swift in Sources */,
+B92354C31D683BC1006F653E /* RewardsDiceVault.swift in Sources */,
+B96F93781D5D829000617A0B /* PowerUpVault.swift in Sources */,
+3CC9988E1D997DCD0024C283 /* IAPHelper.swift in Sources */,
+B94F77811C641CA600B3A78C /* Square.swift in Sources */,
+B95511DA1CF8301E005DB77E /* AchievementUnlocked.swift in Sources */,
+B973BA101CBE3A0700FF90F9 /* AudioManager.swift in Sources */,
+B9A182021CF7C319004AA111 /* Achievement.swift in Sources */,
+B983ED2B1D0293D200A9507F /* ThemesScene.swift in Sources */,
+B9F1D2701C7571BC00E242F7 /* MenuScene.swift in Sources */,
+B969C0FC1C7E8B2A00B24CDB /* Constant.swift in Sources */,
+3CC998901D997F8D0024C283 /* Products.swift in Sources */,
+B94F774F1C63FB7F00B3A78C /* GameScene.swift in Sources */,
+B950AF9C1C8A50EE00A74054 /* Coin.swift in Sources */,
+B9FED4941D9BC7ED000AE061 /* BetoShop.swift in Sources */,
+B988697B1CB99CFE0017577D /* BoardScene.swift in Sources */,
+B94F77511C63FB7F00B3A78C /* GameViewController.swift in Sources */,
+B972CFFB1D124A9F0030119D /* DropdownNode.swift in Sources */,
+B982DFC91C9266ED00D89ED5 /* MenuViewController.swift in Sources */,
+B9AF29671D72C72F0008D375 /* RewardUnlocked.swift in Sources */,
+B972CFFD1D1254E30030119D /* Extensions.swift in Sources */,
+B93465A21C7D2B32008CDA26 /* GameDataManager.swift in Sources */,
+B94F774B1C63FB7F00B3A78C /* AppDelegate.swift in Sources */,
+B9C067291CF009170021AE6E /* AchievementNode.swift in Sources */,
+B9C0672B1CF0094F0021AE6E /* AchievementsListNode.swift in Sources */,
+B9C0672D1CF0423D0021AE6E /* AchievementsManager.swift in Sources */,
+B96F937A1D5DAB2E00617A0B /* PowerUp.swift in Sources */,
+00543AFB1C92ACCC006C3B52 /* DiceMaker.swift in Sources */,
+B9E6D21D1D9C7D5A00B010D1 /* BuyDiceNode.swift in Sources */,
+B9F1D27A1C75AE6700E242F7 /* ButtonNode.swift in Sources */,
+B9C7E2C41C8B88A300879014 /* CoinVault.swift in Sources */,
+B92354C51D6841AA006F653E /* RewardsDice.swift in Sources */,
+B926070B1DC17FEE00FCB98C /* BuyStarCoinsNode.swift in Sources */,
+B9CDB80F1CB8593C00BC8A57 /* Settings.swift in Sources */,
+B983ED291D022A7F00A9507F /* ThemeManager.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+B94F775B1C63FB7F00B3A78C /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+B94F77641C63FB7F00B3A78C /* BetoTests.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+B94F77661C63FB7F00B3A78C /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+B94F776F1C63FB7F00B3A78C /* BetoUITests.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B94F77611C63FB7F00B3A78C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B94F77461C63FB7F00B3A78C /* Beto */;
-			targetProxy = B94F77601C63FB7F00B3A78C /* PBXContainerItemProxy */;
-		};
-		B94F776C1C63FB7F00B3A78C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B94F77461C63FB7F00B3A78C /* Beto */;
-			targetProxy = B94F776B1C63FB7F00B3A78C /* PBXContainerItemProxy */;
-		};
+B94F77611C63FB7F00B3A78C /* PBXTargetDependency */ = {
+isa = PBXTargetDependency;
+target = B94F77461C63FB7F00B3A78C /* Beto */;
+targetProxy = B94F77601C63FB7F00B3A78C /* PBXContainerItemProxy */;
+};
+B94F776C1C63FB7F00B3A78C /* PBXTargetDependency */ = {
+isa = PBXTargetDependency;
+target = B94F77461C63FB7F00B3A78C /* Beto */;
+targetProxy = B94F776B1C63FB7F00B3A78C /* PBXContainerItemProxy */;
+};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B94F77521C63FB7F00B3A78C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B94F77531C63FB7F00B3A78C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B94F77571C63FB7F00B3A78C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B94F77581C63FB7F00B3A78C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+B94F77521C63FB7F00B3A78C /* Main.storyboard */ = {
+isa = PBXVariantGroup;
+children = (
+B94F77531C63FB7F00B3A78C /* Base */,
+);
+name = Main.storyboard;
+sourceTree = "<group>";
+};
+B94F77571C63FB7F00B3A78C /* LaunchScreen.storyboard */ = {
+isa = PBXVariantGroup;
+children = (
+B94F77581C63FB7F00B3A78C /* Base */,
+);
+name = LaunchScreen.storyboard;
+sourceTree = "<group>";
+};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B94F77711C63FB7F00B3A78C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		B94F77721C63FB7F00B3A78C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B94F77741C63FB7F00B3A78C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Beto/Beto.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = Beto/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
-				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.Beto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		B94F77751C63FB7F00B3A78C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Beto/Beto.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = Beto/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.Beto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		B94F77771C63FB7F00B3A78C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = BetoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.BetoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beto.app/Beto";
-			};
-			name = Debug;
-		};
-		B94F77781C63FB7F00B3A78C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BetoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.BetoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beto.app/Beto";
-			};
-			name = Release;
-		};
-		B94F777A1C63FB7F00B3A78C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				INFOPLIST_FILE = BetoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.BetoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Beto;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		B94F777B1C63FB7F00B3A78C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = BetoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.BetoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Beto;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
+B94F77711C63FB7F00B3A78C /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+CLANG_CXX_LIBRARY = "libc++";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNREACHABLE_CODE = YES;
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+COPY_PHASE_STRIP = NO;
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+ENABLE_TESTABILITY = YES;
+GCC_C_LANGUAGE_STANDARD = gnu99;
+GCC_DYNAMIC_NO_PIC = NO;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_OPTIMIZATION_LEVEL = 0;
+GCC_PREPROCESSOR_DEFINITIONS = (
+"DEBUG=1",
+"$(inherited)",
+);
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+MTL_ENABLE_DEBUG_INFO = YES;
+ONLY_ACTIVE_ARCH = YES;
+SDKROOT = iphoneos;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+};
+name = Debug;
+};
+B94F77721C63FB7F00B3A78C /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+CLANG_CXX_LIBRARY = "libc++";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNREACHABLE_CODE = YES;
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+COPY_PHASE_STRIP = NO;
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ENABLE_NS_ASSERTIONS = NO;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+GCC_C_LANGUAGE_STANDARD = gnu99;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+MTL_ENABLE_DEBUG_INFO = NO;
+SDKROOT = iphoneos;
+SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+VALIDATE_PRODUCT = YES;
+};
+name = Release;
+};
+B94F77741C63FB7F00B3A78C /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_ENTITLEMENTS = Beto/Beto.entitlements;
+CODE_SIGN_IDENTITY = "iPhone Developer";
+"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+FRAMEWORK_SEARCH_PATHS = (
+"$(inherited)",
+"$(PROJECT_DIR)",
+);
+INFOPLIST_FILE = Beto/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+OTHER_LDFLAGS = "-ObjC";
+"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.Beto;
+PRODUCT_NAME = "$(TARGET_NAME)";
+PROVISIONING_PROFILE = "";
+SWIFT_VERSION = 3.0;
+};
+name = Debug;
+};
+B94F77751C63FB7F00B3A78C /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_ENTITLEMENTS = Beto/Beto.entitlements;
+CODE_SIGN_IDENTITY = "iPhone Developer";
+"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+FRAMEWORK_SEARCH_PATHS = (
+"$(inherited)",
+"$(PROJECT_DIR)",
+);
+INFOPLIST_FILE = Beto/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+OTHER_LDFLAGS = "-ObjC";
+PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.Beto;
+PRODUCT_NAME = "$(TARGET_NAME)";
+PROVISIONING_PROFILE = "";
+SWIFT_VERSION = 3.0;
+};
+name = Release;
+};
+B94F77771C63FB7F00B3A78C /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+BUNDLE_LOADER = "$(TEST_HOST)";
+DEBUG_INFORMATION_FORMAT = dwarf;
+INFOPLIST_FILE = BetoTests/Info.plist;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.BetoTests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 3.0;
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beto.app/Beto";
+};
+name = Debug;
+};
+B94F77781C63FB7F00B3A78C /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+BUNDLE_LOADER = "$(TEST_HOST)";
+INFOPLIST_FILE = BetoTests/Info.plist;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.BetoTests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 3.0;
+TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Beto.app/Beto";
+};
+name = Release;
+};
+B94F777A1C63FB7F00B3A78C /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+DEBUG_INFORMATION_FORMAT = dwarf;
+INFOPLIST_FILE = BetoUITests/Info.plist;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.BetoUITests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 3.0;
+TEST_TARGET_NAME = Beto;
+USES_XCTRUNNER = YES;
+};
+name = Debug;
+};
+B94F777B1C63FB7F00B3A78C /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+INFOPLIST_FILE = BetoUITests/Info.plist;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.redgarage.BetoUITests;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 3.0;
+TEST_TARGET_NAME = Beto;
+USES_XCTRUNNER = YES;
+};
+name = Release;
+};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B94F77421C63FB7F00B3A78C /* Build configuration list for PBXProject "Beto" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B94F77711C63FB7F00B3A78C /* Debug */,
-				B94F77721C63FB7F00B3A78C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B94F77731C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "Beto" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B94F77741C63FB7F00B3A78C /* Debug */,
-				B94F77751C63FB7F00B3A78C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B94F77761C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "BetoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B94F77771C63FB7F00B3A78C /* Debug */,
-				B94F77781C63FB7F00B3A78C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B94F77791C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "BetoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B94F777A1C63FB7F00B3A78C /* Debug */,
-				B94F777B1C63FB7F00B3A78C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+B94F77421C63FB7F00B3A78C /* Build configuration list for PBXProject "Beto" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+B94F77711C63FB7F00B3A78C /* Debug */,
+B94F77721C63FB7F00B3A78C /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+B94F77731C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "Beto" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+B94F77741C63FB7F00B3A78C /* Debug */,
+B94F77751C63FB7F00B3A78C /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+B94F77761C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "BetoTests" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+B94F77771C63FB7F00B3A78C /* Debug */,
+B94F77781C63FB7F00B3A78C /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+B94F77791C63FB7F00B3A78C /* Build configuration list for PBXNativeTarget "BetoUITests" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+B94F777A1C63FB7F00B3A78C /* Debug */,
+B94F777B1C63FB7F00B3A78C /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
 /* End XCConfigurationList section */
-	};
-	rootObject = B94F773F1C63FB7F00B3A78C /* Project object */;
+};
+rootObject = B94F773F1C63FB7F00B3A78C /* Project object */;
 }

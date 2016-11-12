@@ -167,19 +167,7 @@ extension IAPHelper: SKPaymentTransactionObserver {
         UserDefaults.standard.synchronize()
         
         if identifier == Products.RemoveAds {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: identifier), object: identifier)
-=======
-            
->>>>>>> 40b9ac8... Added 4 packages to IAP
-=======
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: identifier), object: identifier)
->>>>>>> faed6f0... Previous purchases restored
-=======
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: identifier), object: identifier)
->>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
         } else {
             NotificationCenter.default.post(name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification), object: identifier)
         }

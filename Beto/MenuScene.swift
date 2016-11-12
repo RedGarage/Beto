@@ -73,10 +73,6 @@ class MenuScene: SKScene {
         
         addChild(background)
         addChild(layer)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> faed6f0... Previous purchases restored
         
         NotificationCenter.default.addObserver(self, selector: #selector(self.refreshMenuScene), name: NSNotification.Name(rawValue: Products.RemoveAds), object: nil)
     }
@@ -87,14 +83,6 @@ class MenuScene: SKScene {
         menuScene.scaleMode = .aspectFill
         
         view!.presentScene(menuScene, transition: transition)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 40b9ac8... Added 4 packages to IAP
-=======
->>>>>>> faed6f0... Previous purchases restored
-=======
->>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
     }
     
     func presentBoardScene() {

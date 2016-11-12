@@ -64,36 +64,9 @@ class MenuViewController: UIViewController, GADInterstitialDelegate {
             
             interstitialAd = reloadInterstitialAd()
         }
-        
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         updateStarCoins()
         updateUnlockedThemes()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.removeAds), name: NSNotification.Name(rawValue: Products.RemoveAds), object: nil)
->>>>>>> 91de14b... Added 4 packages to IAP
-=======
->>>>>>> fdf0798... 4 packages added
-=======
-=======
-        updateStarCoins()
-        updateUnlockedThemes()
->>>>>>> e549d9a... Star coins and themes save to iCloud
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.removeAds), name: NSNotification.Name(rawValue: Products.RemoveAds), object: nil)
->>>>>>> 6cdfa8e... Added 4 packages to IAP
-=======
-        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.removeAds), name: NSNotification.Name(rawValue: Products.RemoveAds), object: nil)
->>>>>>> faed6f0... Previous purchases restored
-=======
-        updateStarCoins()
-        updateUnlockedThemes()
->>>>>>> 8fc22d00649fad5c81e31bf5515c8791ae86b3ff
     }
     
     func reloadInterstitialAd() -> GADInterstitial {
