@@ -15,19 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-<<<<<<< HEAD
-<<<<<<< HEAD
         if IAPHelper.canMakePayments() {
             Products.store.restorePurchases()
         }
-=======
-        Products.store.restorePurchases()
->>>>>>> faed6f0... Previous purchases restored
-=======
-        if IAPHelper.canMakePayments() {
-            Products.store.restorePurchases()
-        }
->>>>>>> e549d9a... Star coins and themes save to iCloud
         
         return true
     }
